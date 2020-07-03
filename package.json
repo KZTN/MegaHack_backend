@@ -1,14 +1,13 @@
 {
     "name": "MegaHack_backend",
     "version": "1.0.0",
-    "type": "module",
     "main": "index.js",
     "repository": "https://github.com/KZTN/MegaHack_backend",
     "author": "KZTN <kakaiocesar2@gmail.com>",
     "license": "MIT",
     "scripts": {
         "dev": "nodemon src/bin/dev.js",
-        "start": "node src/server.js"
+        "start": "sucrase-node src/server.js"
     },
     "dependencies": {
         "aws-sdk": "^2.709.0",
