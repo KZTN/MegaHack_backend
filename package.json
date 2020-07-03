@@ -6,7 +6,8 @@
     "author": "KZTN <kakaiocesar2@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "dev": "nodemon src/bin/dev.js"
+        "dev": "nodemon src/bin/dev.js",
+        "start": "node src/server.js"
     },
     "dependencies": {
         "aws-sdk": "^2.709.0",
