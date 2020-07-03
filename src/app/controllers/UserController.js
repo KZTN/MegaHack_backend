@@ -18,16 +18,17 @@ class UserController {
             await CreateNotification(
                 'cadastro feito com sucesso!',
                 'Olá, Seja bem-vindo a xxx. Espero que tenha ótimas experiências e que tenha sucesso no seu caminho aqui',
-                'https://media.discordapp.net/attachments/697512026251067472/719696299720704020/logo512.png',
+                'https://www.freepnglogos.com/uploads/instagram-logos-png-images-free-download-2.png',
                 user._id
             );
+
             return res.status(200).json({ email: user.email, id: user._id });
         }
         return res.status(400).json({ error: 'Email already used.' });
     }
 
     async show(req, res) {
-        const user = await User.findById(req.params.userID)
+        const user = await User.findById(req.params.userID).populate('orders').populate('notifications');
         if (user) {
             return res.json(user);
         }
@@ -70,10 +71,7 @@ class UserController {
     }
 
     async index(req, res) {
-        const users = await User.find({})
-            // .populate('projects')
-            .populate('orders')
-            .populate('notifications');
+        const users = await User.find({});
         return res.json(users);
     }
 }

@@ -11,6 +11,7 @@ class EstablishmentController {
             city: Yup.string().required(),
             address: Yup.string().required(),
             number: Yup.string().required(),
+            ZIP: Yup.string().required(),
             password: Yup.string().required(),
             work_start_time: Yup.string().required(),
             work_end_time: Yup.string().required(),
@@ -40,7 +41,7 @@ class EstablishmentController {
     async show(req, res) {
         const establishment = await Establishment.findById(
             req.params.establishmentID
-        ).populate('comments.author').populate('products');
+        ).populate('comments.author').populate('products').populate('orders');
         if (establishment) {
             return res.json(establishment);
         }

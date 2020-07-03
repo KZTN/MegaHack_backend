@@ -10,7 +10,7 @@ export default async function createNotification(title, description, thumbnail, 
   }).then(async (response) => {
     await User.update(
       { _id: userID },
-      { $push: { notifications: response.userID } },
+      { $push: { notifications: response._id } },
       { new: true },
     );
   }).catch((error) => {

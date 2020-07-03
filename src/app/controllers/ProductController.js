@@ -2,7 +2,6 @@ import * as Yup from 'yup';
 import Establishment from '../models/Establishment';
 import Product from '../models/Product';
 
-import CreateNotification from '../../utils/CreateNotification';
 
 class ProductController {
     async store(req, res) {

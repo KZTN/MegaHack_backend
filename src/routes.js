@@ -8,6 +8,7 @@ import EstablishmentController from './app/controllers/EstablishmentController';
 import CommentController from './app/controllers/CommentController';
 import ProductController from './app/controllers/ProductController';
 import OrderController from './app/controllers/OrderController';
+import NotificationController from './app/controllers/NotificationController';
 
 
 const upload = multer(multerConfig);
@@ -36,7 +37,11 @@ routes.get('/products', ProductController.index);
 
 routes.get('/orders', OrderController.index);
 routes.post('/orders', OrderController.store);
+routes.get('/orders/:orderID', OrderController.show);
+routes.put('/orders/:orderID', OrderController.update);
 
+routes.get('/notifications', NotificationController.index);
+routes.get('/notifications/:notificationID', NotificationController.show);
 
 routes.get('/', (req, res) => res.json({ msg: 'ok' }));
 

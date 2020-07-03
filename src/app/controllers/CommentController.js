@@ -28,7 +28,6 @@ class CommentController {
         return res.json(error);
       });
   }
-
 };
 
 export default new CommentController;
