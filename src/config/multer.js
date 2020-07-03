@@ -32,7 +32,7 @@ const storageTypes = {
   }),
 };
 
-module.exports = {
+export default {
   dest: path.resolve(__dirname, '..', '..', 'tmp', 'uploads'),
   storage: storageTypes.s3,
   limits: {
