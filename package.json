@@ -1,6 +1,7 @@
 {
     "name": "MegaHack_backend",
     "version": "1.0.0",
+    "type": "module",
     "main": "index.js",
     "repository": "https://github.com/KZTN/MegaHack_backend",
     "author": "KZTN <kakaiocesar2@gmail.com>",
