@@ -26,7 +26,7 @@ class OrderController {
                 { _id: req.body.establishment },
                 {
                     $push: {
-                        orders: {order},
+                        orders: order,
                     },
                 }
             );
@@ -34,7 +34,7 @@ class OrderController {
                 { _id: req.body.user },
                 {
                     $push: {
-                        orders: {order},
+                        orders: order,
                     },
                 }
             );
