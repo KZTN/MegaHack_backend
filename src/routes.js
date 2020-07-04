@@ -36,6 +36,7 @@ routes.post('/comments/:establishmentID',  CommentController.store);
 
 routes.post('/products', upload.single('thumbnail'), ProductController.store);
 routes.get('/products', ProductController.index);
+routes.get('/products/:productID', ProductController.show);
 
 
 routes.get('/orders', OrderController.index);

@@ -39,6 +39,11 @@ class ProductController {
         const products = await Product.find({});
         return res.json(products);
     }
+
+    async show(req, res) {
+        const products = await Product.findById(req.params.productID).populate('establishment');
+        return res.json(products);
+    }
 }
 
 export default new ProductController();
