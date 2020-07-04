@@ -35,7 +35,7 @@ class PostController {
     }
 
     async index(req, res) {
-        await Post.find({}).then((response) => {
+        await Post.find({}).populate('establishment').then((response) => {
             return res.json(response);
         }).catch((error) => {
             return res.json(error);
