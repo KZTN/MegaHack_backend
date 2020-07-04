@@ -49,7 +49,7 @@ routes.post('/sessions', SessionController.store);
 
 routes.post('/posts',upload.single('thumbnail'), PostController.store)
 routes.get('/posts', PostController.index)
-routes.get('/posts/postID', PostController.show)
+routes.get('/posts/:postID', PostController.show)
 
 routes.get('/', (req, res) => res.json({ msg: 'ok' }));
 
