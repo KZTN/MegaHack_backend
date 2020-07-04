@@ -28,7 +28,7 @@ class UserController {
     }
 
     async show(req, res) {
-        const user = await User.findById(req.params.userID).populate('orders').populate('notifications');
+        const user = await User.findById(req.params.userID).populate("orders.order").populate("notifications").populate("favorites");
         if (user) {
             return res.json(user);
         }

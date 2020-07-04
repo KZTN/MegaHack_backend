@@ -11,6 +11,7 @@ import OrderController from './app/controllers/OrderController';
 import NotificationController from './app/controllers/NotificationController';
 import SessionController from './app/controllers/SessionController';
 import PostController from './app/controllers/PostController';
+import FavoriteController from './app/controllers/FavoriteController';
 
 
 const upload = multer(multerConfig);
@@ -50,6 +51,10 @@ routes.post('/sessions', SessionController.store);
 routes.post('/posts',upload.single('thumbnail'), PostController.store)
 routes.get('/posts', PostController.index)
 routes.get('/posts/:postID', PostController.show)
+
+
+routes.post('/favorites/:userID', FavoriteController.store);
+
 
 routes.get('/', (req, res) => res.json({ msg: 'ok' }));
 

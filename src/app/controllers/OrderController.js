@@ -18,7 +18,7 @@ class OrderController {
             const orderResult = await Order.findById(order._id).populate('user').populate('establishment').populate('product');
             await CreateNotification(
                 'Pedido feito com sucesso!',
-                `Olá, ${orderResult.user.name} o pedido ${orderResult.product.name} no valor de ${orderResult.product.price} foi feito com sucesso`,
+                `Olá, ${orderResult.user.name}. O pedido ${orderResult.product.name} no valor de ${orderResult.product.price} foi feito com sucesso`,
                 `${orderResult.product.thumbnail}`,
                 req.body.user
             );
@@ -26,7 +26,7 @@ class OrderController {
                 { _id: req.body.establishment },
                 {
                     $push: {
-                        orders: order._id,
+                        orders: {order},
                     },
                 }
             );
@@ -34,7 +34,7 @@ class OrderController {
                 { _id: req.body.user },
                 {
                     $push: {
-                        orders: order._id,
+                        orders: {order},
                     },
                 }
             );
