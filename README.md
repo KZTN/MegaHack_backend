@@ -46,6 +46,12 @@ yarn start
 Visite http://localhost:3000 com o seu navegador para ver o resultado. 🎉
 
 
+## 📄 Documentação 
+<ul>
+   <li><a href="https://ogirin-docs.vercel.app/" target="_blank">Versão unificada</a></li>
+</ul>
+
+
 # 🧪 Tenologias utilizadas: 
 
  - [NodeJS](https://nodejs.org/en/docs/) - Plataforma da aplicação
