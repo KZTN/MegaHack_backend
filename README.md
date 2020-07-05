@@ -1,5 +1,6 @@
 # MegaHack_backend
 
+Este é o backend da plataforma Origin, marketplace de venda de produtos alimentícios para pequenos estabelecimentos. O repositório do front-end se encontra em https://github.com/KZTN/MegaHack_frontend (acesse para mais detalhes)
 
 ## Como contribuir
 
