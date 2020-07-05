@@ -3,6 +3,49 @@
 Este é o backend da plataforma Origin, marketplace de venda de produtos alimentícios para pequenos estabelecimentos. O repositório do front-end se encontra em https://github.com/KZTN/MegaHack_frontend (acesse para mais detalhes)
 
 
+
+## Começando...
+Essas instruções fornecerão uma cópia do projeto em execução na sua máquina local para fins de desenvolvimento e teste.
+
+### Pré-requisitos
+O que você precisa para instalar o software:
+
+```
+node v12.x
+yarn 1.22.4
+git
+```
+> Para uma melhor experiência no ambiente de testes com o servidor API REST, recomenda-se o uso do [insomnia](https://insomnia.rest/)
+
+### Instalando o projeto 🚀
+Clonando o projeto:
+
+```
+git clone https://github.com/KZTN/MegaHack_backend.git
+```
+
+Navegando até a pasta do projeto:
+
+```
+cd MegaHack_backend
+```
+
+Baixando as dependências do projeto:
+
+```bash
+yarn install
+```
+
+Rodando o projeto:
+
+```bash
+yarn start
+```
+
+
+Visite http://localhost:3000 com o seu navegador para ver o resultado. 🎉
+
+
 # 🧪 Tenologias utilizadas: 
 
  - [NodeJS](https://nodejs.org/en/docs/) - Plataforma da aplicação
