@@ -61,6 +61,9 @@ Visite http://localhost:3000 com o seu navegador para ver o resultado. 🎉
  - [Express](https://expressjs.com/en/api.html) - Endpoint de chamadas e requisições HTTP
  - [Yup](https://github.com/jquense/yup) - Validator de compor de requisições a API
 
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
 ## Como contribuir
 
