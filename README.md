@@ -43,7 +43,7 @@ yarn start
 ```
 
 
-Visite http://localhost:3000 com o seu navegador para ver o resultado. 🎉
+Visite http://localhost:3333 com o seu navegador para ver o resultado. 🎉
 
 
 ## 📄 Documentação 
